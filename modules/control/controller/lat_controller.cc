@@ -519,7 +519,7 @@ Status LatController::ComputeControlCommand(
       }
     }
   }
-  steer_angle = (steer_angle_feedback) +
+  steer_angle = (steer_angle_feedback) + (steer_angle_feedforward) +
                 steer_angle_feedback_augment;
 
   // Compute the steering command limit with the given maximum lateral
